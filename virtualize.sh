@@ -1,5 +1,4 @@
-build-kernel(){
+uek-kernel(){
   sudo yum install kernel-uek-devel
-  sudo /sbin/vboxconfig
 }
 $@
