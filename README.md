@@ -8,8 +8,8 @@ Oracle Linux utils
 
 ## Switch to Server with GUI
 1. Ensure Internet first, wired is recommended
-1. `sudo yum groupinstall "Server with GUI"`
+1. `sudo yum groupinstall -y "Server with GUI"`
 1. `sudo systemctl set-default graphical.target`
-1. `reboot`
+1. `sudo reboot`
 
 ## Extends [fedora-utils](https://github.com/davidkhala/fedora-utils)
