@@ -1,5 +1,5 @@
-# oracle-linux-utils
-Oracle Linux utils
+# Oracle Linux Utils
+
 
 ## Direct Yum Repository URL
 | ver. | url |
