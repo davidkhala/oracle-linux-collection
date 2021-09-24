@@ -1,5 +1,5 @@
 install(){
-    sudo yum erase podman buildah
+    sudo yum erase -y podman buildah
     sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
     sudo dnf install -y docker-ce
 }
