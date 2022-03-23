@@ -1,4 +1,5 @@
 install(){
+    sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
     sudo yum install -y docker-ce
 }
 rootless(){
@@ -7,5 +8,6 @@ rootless(){
 }
 uninstall(){
     sudo yum erase -y docker-ce
+    sudo rm -f /etc/yum.repos.d/docker-ce.repo
 }
 $@
