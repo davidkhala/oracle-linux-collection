@@ -1,6 +1,11 @@
-configure-repository(){
+register(){
   sudo dnf install oracle-instantclient-release-el8
 }
+unregister(){
+  sudo dnf remove oracle-instantclient-release-el8
+  
+}
+
 install-light(){
 #  TODO verify basiclite or basiclight?
   sudo dnf install oracle-instantclient-basiclite
