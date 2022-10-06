@@ -1,14 +1,13 @@
 register(){
-  sudo dnf install oracle-instantclient-release-el8
+  sudo dnf install -y oracle-instantclient-release-el8
 }
 unregister(){
-  sudo dnf remove oracle-instantclient-release-el8
+  sudo dnf remove -y oracle-instantclient-release-el8
   
 }
 
 install-light(){
-#  TODO verify basiclite or basiclight?
-  sudo dnf install oracle-instantclient-basiclite
+  sudo dnf install -y oracle-instantclient-basiclite
 }
 install(){
   sudo dnf install oracle-instantclient-basic
