@@ -10,9 +10,9 @@ install-light(){
   sudo dnf install -y oracle-instantclient-basiclite
 }
 install(){
-  sudo dnf install oracle-instantclient-basic
+  sudo dnf install -y oracle-instantclient-basic
 }
 install-sqlplus(){
-  sudo dnf install oracle-instantclient-sqlplus
+  sudo dnf install -y oracle-instantclient-sqlplus
 }
 $@
