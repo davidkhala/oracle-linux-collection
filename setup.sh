@@ -3,6 +3,9 @@ repo() {
 }
 dev() {
   sudo dnf install -y oraclelinux-developer-release-el8
+
+}
+xclip() {
   sudo dnf install -y oracle-epel-release-el8
   sudo dnf install -y xclip
 }
