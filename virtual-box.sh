@@ -1,5 +1,6 @@
 build-kernel() {
-  sudo yum install -y kernel-uek-devel
+  sudo dnf install -y kernel-uek-devel
+  sudo dnf update
   sudo /sbin/vboxconfig
 }
 $@
