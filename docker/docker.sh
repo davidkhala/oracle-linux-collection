@@ -6,6 +6,7 @@ install() {
 uninstall() {
     sudo yum erase -y docker-ce
     sudo rm /etc/yum.repos.d/docker-ce.repo
+    sudo yum install -y podman buildah
 }
 login-OCR() {
     # login to Oracle Container Registry
