@@ -1,4 +1,4 @@
 install(){
-  sudo yum install -y oracle-nodejs-release-el7 oracle-release-el7
-  sudo yum install -y ol7_developer_nodejs16
+  sudo yum install -y oracle-nodejs-release-el7 
+  sudo yum install -y nodejs
 }
