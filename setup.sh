@@ -10,8 +10,8 @@ xclip() {
 desktop(){
   sudo dnf update
   sudo dnf groupinstall -y "Server with GUI"
-  systemctl set-default graphical.target
-  ln -sf /lib/systemd/system/runlevel5.target /etc/systemd/system/default.target
+  sudo systemctl set-default graphical.target
+  sudo ln -sf /lib/systemd/system/runlevel5.target /etc/systemd/system/default.target
   sudo reboot
 }
 
