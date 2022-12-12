@@ -9,8 +9,8 @@ xclip() {
 }
 desktop(){
   sudo dnf update
-  sudo dnf groupinstall -y "Server with GUI"
-  sudo systemctl set-default graphical.target
+  curl https://raw.githubusercontent.com/davidkhala/fedora-utils/master/install.sh | bash -s desktop
+
   sudo ln -sf /lib/systemd/system/runlevel5.target /etc/systemd/system/default.target
   sudo reboot
 }
