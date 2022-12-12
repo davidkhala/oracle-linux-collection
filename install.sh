@@ -3,8 +3,11 @@ dev() {
   sudo dnf install -y oraclelinux-developer-release-el8
 
 }
+epel(){
+  sudo dnf install -y epel-release
+}
 xclip() {
-  sudo dnf install -y oracle-epel-release-el8
+  epel
   sudo dnf install -y xclip
 }
 desktop(){
