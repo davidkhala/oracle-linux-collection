@@ -13,6 +13,7 @@ install(){
   sudo dnf install -y oracle-instantclient-basic
 }
 install-sqlplus(){
+  register
   sudo dnf install -y oracle-instantclient-sqlplus
 }
 $@
