@@ -3,10 +3,10 @@ xclip() {
   sudo dnf install -y xclip
 }
 desktop() {
-  sudo dnf update
-  curl https://raw.githubusercontent.com/davidkhala/fedora-utils/master/install.sh | bash -s desktop
+  sudo dnf update -y
+  sudo dnf groupinstall -y "Server with GUI"
+  curl https://github.com/davidkhala/centos-collection/blob/main/system/desktop.sh | bash -s post-install
 
-  sudo ln -sf /lib/systemd/system/runlevel5.target /etc/systemd/system/default.target
   sudo reboot
 }
 libtool() {
