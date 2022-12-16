@@ -2,5 +2,6 @@ install(){
   sudo dnf config-manager --enable ol8_developer_EPEL
   sudo dnf update -y
   
-  # TODO then same with fedora install 
+  curl https://raw.githubusercontent.com/davidkhala/centos-collection/main/connect/rdp.sh | bash -s install
+  
 }
