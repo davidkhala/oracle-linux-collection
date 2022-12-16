@@ -1,4 +1,4 @@
-install (){
-  sudo yum install -y jdk
+install() {
+  sudo dnf install -y jdk
 }
-$1
+$@
