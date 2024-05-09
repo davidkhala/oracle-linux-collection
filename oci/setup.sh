@@ -1,0 +1,1 @@
+sudo pass $USER # opc
